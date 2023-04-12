@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: As selection sort already identified, only algorithm that takes time to sort reversed files is bubble sort whose big-O notation os of order of n^2.
+
+sort2 uses: merge sort
+
+How do you know?: Both algorithms are identified so third and last algorithm is merge sort.
+
+sort3 uses: selection sort
+
+How do you know?: It takes time to start printing sorted values of the file which are already sorted. Selection sort's omega is of order of n^2.

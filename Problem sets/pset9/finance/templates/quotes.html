@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+{% block main %}
+    <table align="center">
+        <tr>
+            <th align="center"> Symbol </th>
+            <th align="center"> Name </th>
+            <th align="center"> Price </th>
+        </tr>
+            <tr>
+                <td> {{ lookup["symbol"] }} </td>
+                <td> {{ lookup["name"] }} </td>
+                <td> ${{ lookup["price"] }} </td>
+            </tr>
+    </table>
+{% endblock %}

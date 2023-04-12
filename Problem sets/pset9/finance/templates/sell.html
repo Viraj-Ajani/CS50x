@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+{% block main %}
+    <form align="center" method="post" action="/sell">
+        <div class="form-group">
+            <input type="input" name="symbol" placeholder="Symbol">
+        </div>
+        <div class="form-group">
+            <input type="input" name="shares" placeholder="Shares">
+        </div> <br>
+        <button class="btn btn-primary" type="submit">Sold</button>
+    </form>
+{% endblock %}

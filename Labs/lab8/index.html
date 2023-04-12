@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            // Add code to check answers to questions
+
+            //Part 1
+            function p1()
+            {
+                var a = documnet.querySelectorAll("#i");
+                a.style.background = "FF0000";
+            }
+
+            // Part 2
+            function check()
+            {
+                var b = document.querySelector("#answer");
+                var c = document.querySelector("#ci");
+                if (b.value=="Switzerland")
+                {
+                    c.value="Correct";
+                    c.style.background = "#00FF00";
+                }
+                else
+                {
+                    c.value="Incorrect";
+                    c.style.background = "#FF0000";
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- Add multiple choice question here -->
+                <h3> What is approximate ratio of people to sheep in New Zealand? </h3> <br>
+                <button id="i" onClick="p1()"> 6 people per 1 sheep </button>
+                <button id="i" onClick="p1()"> 3 people per 1 sheep </button>
+                <button id="i" onClick="p1()"> 1 person per 1 sheep </button>
+                <button id="i" onClick="p1()"> 1 person per 3 sheep </button>
+                <button id="c" onClick="p1()"> 1 person per 6 sheep </button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- Add free response question here -->
+                <h3> In which country it is illegal to own only one guinea pig, as a lone guinea pig might get lonely? </h3><br>
+                <from>
+                    <input type="text" id="answer">
+                    <input type="submit" value="Check Answer" onClick="check()" id="ci">
+                </from>
+            </div>
+
+        </div>
+    </body>
+</html>
